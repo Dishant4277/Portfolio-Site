@@ -9,6 +9,12 @@
   #contact,
   #projects {
     height: fit-content;
+    margin: 10%;
+  }
+  .project-img {
+    border-radius: 2rem;
+    width: 70%;
+    height: 40vh;
   }
 }
 
@@ -99,5 +105,10 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .project-img {
+    border-radius: 2rem;
+    width: 35vh;
+    height: 35vh;
   }
 }
