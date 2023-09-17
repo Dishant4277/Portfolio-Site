@@ -271,6 +271,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .about-details-container {
@@ -357,6 +358,8 @@ article .icon {
 
 #projects {
   position: relative;
+  height: fit-content;
+  margin: 0 20%;
 }
 
 .color-container {
@@ -366,7 +369,7 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
+  width: 40vh;
   height: 40vh;
 }
 
