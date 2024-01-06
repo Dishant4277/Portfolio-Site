@@ -389,7 +389,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 100vh;
 }
 
 .contact-info-upper-container {
@@ -432,4 +432,54 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* contact-form */
+.container {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form-control textarea {
+  resize: none;
+  height: 150px;
+}
+
+.form-control button {
+  width: 104%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
 }
