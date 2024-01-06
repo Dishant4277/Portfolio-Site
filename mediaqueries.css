@@ -54,7 +54,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact{
+  .container {
     height: 55%;
   }
   footer {
