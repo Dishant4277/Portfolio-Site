@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" >
+    <link rel="icon" href="/assets/favicon.ico" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -381,6 +382,25 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+      <div class="container">
+        <form class="contact-form" id="myForm">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-control">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
