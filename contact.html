@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Dishant Balotra</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Dishant Balotra</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="container">
+        <form class="contact-form" id="myForm">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-control">
+            <label for="designation" class="designation">Designation</label>
+            <label class="radio-container">
+              <input type="radio" name="designation" value="Student" />
+              <span class="radio-checkmark"></span>
+              <span class="radio-value">Student</span>
+            </label>
+
+            <label class="radio-container">
+              <input type="radio" name="designation" value="Developer" />
+              <span class="radio-checkmark"></span>
+              <span class="radio-value">Developer</span>
+            </label>
+
+            <label class="radio-container">
+              <input type="radio" name="designation" value="Designer" />
+              <span class="radio-checkmark"></span>
+              <span class="radio-value">Designer</span>
+            </label>
+            <label class="radio-container">
+              <input type="radio" name="designation" value="Manager" />
+              <span class="radio-checkmark"></span>
+              <span class="radio-value">Manager</span>
+            </label>
+          </div>
+          <div class="container3 form-control">
+            <label for="countrySelect">Select Country or Region</label>
+            <select id="countrySelect" name="country">
+              <option value="" disabled selected>Select a country</option>
+              <option value="India">India</option>
+              <option value="China">China</option>
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Germany">Germany</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-control">
+            <div class="container1">
+              <label class="checkbox-container">
+                <input type="checkbox" id="robotCheckbox" required />
+                <span class="checkmark"></span>
+                I'm not a robot
+              </label>
+            </div>
+          </div>
+          <div class="form-control">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <a href="mailto:dishantbalotra4277@gmail.com">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+          /></a>
+          <p>
+            <a href="mailto:dishantbalotra4277@gmail.com"
+              >dishantbalotra4277@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <a
+            href="https://www.linkedin.com/in/dishant-balotra-6105b9208"
+            target="_blank"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+          /></a>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/dishant-balotra-6105b9208"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Dishant Balotra. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -13,24 +13,37 @@ function handleFormSubmit(event) {
   const name = formData.get("name");
   const email = formData.get("email");
   const message = formData.get("message");
+  const designation = formData.get("designation");
+  const country = formData.get("country");
 
   console.log(`Name: ${name}`);
   console.log(`Email: ${email}`);
   console.log(`Message: ${message}`);
+  console.log(`Designation: ${designation}`);
+  console.log(`Country: ${country}`);
 
-  sendMail(name, email, message);
+  sendMail(name, email, message, designation, country);
 }
 // Attach the event listener to the form element.
 document
   .querySelector(".contact-form")
   .addEventListener("submit", handleFormSubmit);
 
-function sendMail(name, email, message) {
+function sendMail(name, email, message, designation, country) {
   var link =
     "mailto:dishantbalotra4277@gmail.com" +
     "?cc=" +
     "&subject=" +
-    encodeURIComponent("Name: " + name + "     Sender mail: " + email) +
+    encodeURIComponent(
+      "Name: " +
+        name +
+        "   Sender mail: " +
+        email +
+        "   Designation: " +
+        designation +
+        "   Country: " +
+        country
+    ) +
     "&body=" +
     encodeURIComponent(message);
   window.location.href = link;

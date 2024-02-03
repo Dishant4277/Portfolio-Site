@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" >
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
     <link rel="icon" href="assets/favicon.ico" />
   </head>
   <body>
@@ -14,10 +14,11 @@
       <div class="logo">Dishant Balotra</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#profile">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -30,16 +31,17 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="profile picture" />
+        <img src="./assets/p1.png" alt="profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -52,7 +54,10 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='contact.html'"
+          >
             Contact Info
           </button>
         </div>
@@ -72,66 +77,10 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile-pic-2.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Beginner <br />MERN Stack Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.E. CSE 2024 @ GCET Jammu</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hello! 👋 I'm Dishant Balotra, a budding MERN stack developer with
-              a passion for crafting web applications that deliver exceptional
-              user experiences. I embarked on my web development journey with a
-              deep fascination for the digital world. Starting with HTML, CSS,
-              and JavaScript, I gradually honed my skills in creating engaging
-              and responsive front-end interfaces. My curiosity led me to
-              explore the MERN stack, where I found the perfect blend of
-              versatility and modern technology. I'm actively seeking
-              opportunities to collaborate on exciting projects, contribute to
-              open-source initiatives, and learn from experienced developers.
-              I'm eager to make a meaningful contribution to the tech community
-              as a proficient MERN stack developer.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skillset</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -271,7 +220,7 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"
+        onclick="location.href='#projects'"
       />
     </section>
     <section id="projects">
@@ -300,6 +249,30 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://sociavista.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://flatlogic.com/blog/wp-content/uploads/2021/09/React-chat-app2-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chat App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Dishant4277/Chat-App'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://chat-dishant.vercel.app/'"
               >
                 Live Demo
               </button>
@@ -357,68 +330,19 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://flatlogic.com/blog/wp-content/uploads/2021/09/React-chat-app2-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Chat App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dishant4277/Chat-App'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://chat-dishant.vercel.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="container">
-        <form class="contact-form" id="myForm">
-          <div class="form-control">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-control">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div class="form-control">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
+
+    <footer>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <a href="mailto:dishantbalotra4277@gmail.com">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+          /></a>
           <p>
             <a href="mailto:dishantbalotra4277@gmail.com"
               >dishantbalotra4277@gmail.com</a
@@ -426,31 +350,36 @@
           </p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
+          <a
+            href="https://www.linkedin.com/in/dishant-balotra-6105b9208"
+            target="_blank"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+          /></a>
           <p>
-            <a href="https://www.linkedin.com/in/dishant-balotra-6105b9208"
+            <a
+              href="https://www.linkedin.com/in/dishant-balotra-6105b9208"
+              target="_blank"
               >LinkedIn</a
             >
           </p>
         </div>
       </div>
-    </section>
-    <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#profile">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#experience">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Dishant Balotra. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Dishant Balotra. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
