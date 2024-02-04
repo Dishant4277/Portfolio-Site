@@ -51,7 +51,11 @@ a {
   text-decoration: none;
   text-decoration-color: white;
 }
-
+.active {
+  color: orange;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
 a:hover {
   color: grey;
   text-decoration: underline;
